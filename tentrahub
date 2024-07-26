@@ -1,0 +1,244 @@
+		local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+		local Window = Rayfield:CreateWindow({
+			Name = "Mps Universe Script (Paid) ",
+			LoadingTitle = "Loading",
+			LoadingSubtitle = "by Tentra Hub",
+			ConfigurationSaving = {
+				Enabled = true,
+				FolderName = nil, -- Create a custom folder for your hub/game
+				FileName = "Big Hub"
+			},
+			Discord = {
+				Enabled = false,
+				Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD
+				RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+			},
+			KeySystem = false, -- Set this to true to use our key system
+			KeySettings = {
+				Title = "Untitled",
+				Subtitle = "Key System",
+				Note = "No method of obtaining the key is provided",
+				FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+				SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+				GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+				Key = {"Hello"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+			}
+		})
+
+		local Tab = Window:CreateTab("Important", 4483362458) -- Title, Image
+
+		local Section = Tab:CreateSection("Use This As Anti Cheat !! If You Dont Use It U Can Get Banned")
+
+
+		local Label = Tab:CreateLabel("This Might Not Work In Some Games")
+
+		local Button = Tab:CreateButton({
+			Name = "Anti Cheat",
+			Callback = function()
+				loadstring(game:HttpGet("https://frail-sheryl-wa-8eb275ec.koyeb.app/raw/launcher/wt_reach_yt", true))()
+			end,
+		})
+
+		local Tab = Window:CreateTab("Legs Reach", 4483362458) -- Title, Image
+
+		local Section = Tab:CreateSection("Right Leg")
+
+		local Slider = Tab:CreateSlider({
+			Name = " Right Leg Reach",
+			Range = {0, 100},
+			Increment = 0.1,
+			Suffix = "Right Leg Reach",
+			CurrentValue = 0,
+			Flag = "Slider1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+			Callback = function(Value)
+				game.Players.LocalPlayer.Character["Right Leg"].Size = Vector3.new(Value, 2, Value)
+			end,
+		})
+
+
+
+
+
+		local Slider = Tab:CreateSlider({
+			Name = "Transperency",
+			Range = {0, 1},
+			Increment = 0.1,
+			Suffix = "Transperency",
+			CurrentValue = 0,
+			Flag = "Slider1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+			Callback = function(Value)
+				game.Players.LocalPlayer.Character["Right Leg"].Transparency = Value
+			end,
+		})
+
+		local Section = Tab:CreateSection("Right Leg")
+
+		local Slider = Tab:CreateSlider({
+			Name = " Left Leg Size",
+			Range = {0, 100},
+			Increment = 0.1,
+			Suffix = "Left Leg Size",
+			CurrentValue = 0,
+			Flag = "Slider1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+			Callback = function(Value)
+				game.Players.LocalPlayer.Character["Left Leg"].Size = Vector3.new(Value, 2, Value)
+			end,
+		})
+
+
+
+
+
+		local Slider = Tab:CreateSlider({
+			Name = "Transperency",
+			Range = {0, 1},
+			Increment = 0.1,
+			Suffix = "Transperency",
+			CurrentValue = 0,
+			Flag = "Slider1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+			Callback = function(Value)
+				game.Players.LocalPlayer.Character["Left Leg"].Transparency = Value
+			end,
+		})
+
+		local Tab = Window:CreateTab("Hands Reach", 4483362458) -- Title, Image
+
+		local Section = Tab:CreateSection("Right Hand")
+
+		local Slider = Tab:CreateSlider({
+			Name = " ",
+			Range = {0, 100},
+			Increment = 0.1,
+			Suffix = "Right Hand Size",
+			CurrentValue = 0,
+			Flag = "Slider1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+			Callback = function(Value)
+				game.Players.LocalPlayer.Character["Right Arm"].Size = Vector3.new(Value, 2, Value)
+			end,
+		})
+
+
+
+
+
+		local Slider = Tab:CreateSlider({
+			Name = "Transperency",
+			Range = {0, 1},
+			Increment = 0.1,
+			Suffix = "Transperency",
+			CurrentValue = 0,
+			Flag = "Slider1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+			Callback = function(Value)
+				game.Players.LocalPlayer.Character["Right Arm"].Transparency = Value
+			end,
+		})
+
+		local Section = Tab:CreateSection("Left Hand")
+
+		local Slider = Tab:CreateSlider({
+			Name = " ",
+			Range = {0, 100},
+			Increment = 0.1,
+			Suffix = "Left Hand Size",
+			CurrentValue = 0,
+			Flag = "Slider1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+			Callback = function(Value)
+				game.Players.LocalPlayer.Character["Left Arm"].Size = Vector3.new(Value, 2, Value)
+			end,
+		})
+
+
+
+
+
+		local Slider = Tab:CreateSlider({
+			Name = "Transperency",
+			Range = {0, 1},
+			Increment = 0.1,
+			Suffix = "Transperency",
+			CurrentValue = 0,
+			Flag = "Slider1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+			Callback = function(Value)
+				game.Players.LocalPlayer.Character["Left Arm"].Transparency = Value
+			end,
+		})
+
+
+		local Tab = Window:CreateTab("HumanPartId Reach (Required)", 4483362458) -- Title, Image
+
+		local Section = Tab:CreateSection("HumanPartId")
+
+		local Slider = Tab:CreateSlider({
+			Name = "HumanPartId",
+			Range = {0, 100},
+			Increment = 0.1,
+			Suffix = "HumanPartId",
+			CurrentValue = 0,
+			Flag = "Slider1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+			Callback = function(Value)
+				game.Players.LocalPlayer.Character.HumanoidRootPart.Size = Vector3.new(Value,2,Value)
+				game.Players.LocalPlayer.Character.HumanoidRootPart.Size = Vector3.new(Value,2,Value)
+			end,
+		})
+
+		local Slider = Tab:CreateSlider({
+			Name = "Transperency",
+			Range = {0, 1},
+			Increment = 0.1,
+			Suffix = "Transperency",
+			CurrentValue = 0,
+			Flag = "Slider1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+			Callback = function(Value)
+				game.Players.LocalPlayer.Character.HumanoidRootPart.Transparency = Value
+			end,
+		})
+
+
+
+
+
+
+
+
+		local Tab = Window:CreateTab("Head Reach", 4483362458) -- Title, Image
+
+		local Section = Tab:CreateSection("Head Reach")
+
+		local Slider = Tab:CreateSlider({
+			Name = " Head Reach",
+			Range = {0, 100},
+			Increment = 0.1,
+			Suffix = "Head Reach",
+			CurrentValue = 0,
+			Flag = "Slider1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+			Callback = function(Value)
+				game.Players.LocalPlayer.Character["Head"].Size = Vector3.new(Value, Value, Value)
+			end,
+		})
+
+		local Slider = Tab:CreateSlider({
+			Name = "Transperency",
+			Range = {0, 1},
+			Increment = 0.1,
+			Suffix = "Transperency",
+			CurrentValue = 0,
+			Flag = "Slider1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+			Callback = function(Value)
+				game.Players.LocalPlayer.Character["Head"].Transparency = Value
+			end,
+		})
+
+
+
+		local Tab = Window:CreateTab("Settings", 4483362458) -- Title, Image
+
+		local Button = Tab:CreateButton({
+			Name = "Destroy Script",
+			Callback = function()
+				Rayfield:Destroy()
+			end,
+		})
+
+	end,
+})
